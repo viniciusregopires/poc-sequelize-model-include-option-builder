@@ -1,0 +1,18 @@
+{
+  "name": "poc-sequelize-model-include-option-builder",
+  "version": "0.0.1",
+  "description": "It builds a sequelize model's include option from a graphql based syntax's string",
+  "author": "vinirego",
+  "license": "ISC",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js build --resources='id,title,Activity{id,ActivityEvent{id,ActivityEventOp,ActivityEventOp2}}TaskEvent,TaskReport{id,description},description,TaskMaster'"
+  },
+  "dependencies": {
+    "hashmap": "^2.4.0",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "yargs": "^15.1.0"
+  }
+}

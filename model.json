@@ -1,0 +1,1 @@
+{"attributes":["id","title","description"],"include":[{"model":"Activity","attributes":["id"],"include":[{"model":"ActivityEvent","attributes":["id"],"include":[{"model":"ActivityEventOp"},{"model":"ActivityEventOp2"}]}]},{"model":"TaskEvent"},{"model":"TaskReport","attributes":["id","description"]},{"model":"TaskMaster"}]}
