@@ -9,11 +9,11 @@ attributes with lower case. Also differently from original graphql, the associat
 are not mandatory.
 ## Script execution
 Using terminal from project's root folder, first run `npm install` to install the dependencies. 
-#####Command syntax
+###Command syntax
 ```bash
 node src/app.js build --resources='graphql based syntax string'
 ```
-#####Command Example
+###Command Example
 The following command can be executed
 ```bash
 node src/app.js build --resources='id,title,Activity{id,ActivityEvent{id,ActivityEventOp,ActivityEventOp2}}TaskEvent,TaskReport{id,description},description,TaskMaster'
