@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js build --resources='id,title,Activity{id, ActivityEvent{ id,ActivityEventOp,   ActivityEventOp2}}TaskEvent,    TaskReport{id, description},description,TaskMaster'"
+    "start": "node src/app.js build --resources='id,title,Activity{id,ActivityEvent{id,ActivityEventOp,ActivityEventOp2}}TaskEvent,TaskReport{id,description},description,TaskHistory'"
   },
   "dependencies": {
     "hashmap": "^2.4.0",

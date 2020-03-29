@@ -22,6 +22,7 @@ class SequelizeModelIncludeOptionBuilder {
         return this.stack[this.depth];
     }
 
+    /** Modularize this method */
     build(resources) {
         const lexemes = lexemeUtils.getLexemes(resources);
 
@@ -45,6 +46,7 @@ class SequelizeModelIncludeOptionBuilder {
 
         const modelKey = this.stack.pop();
         const model = this.models.get(modelKey);
+
         this._exportJSONFile(model);
     }
 
