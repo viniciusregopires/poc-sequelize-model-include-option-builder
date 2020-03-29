@@ -23,5 +23,5 @@ As the command above is contained at `package.json` start script, it's possible 
 npm run start
 ```
 ## Result
-Lastly, after script execution the sequelize model's include option object is generated and 
-exported as JSON to project's root folder in `model.json` file.
+After script execution, the sequelize model's include option object is generated and exported 
+as JSON to project's root folder in `model.json` file.

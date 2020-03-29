@@ -1,6 +1,6 @@
 const _ = require('underscore');
 
-const getLexemes = (resources) => _.without(resources.split(/(,|}|{)/), ',', '{', '');
+const getLexemes = (resources) => _.without(resources.replace(/\s+/g, '').split(/(,|}|{)/), ',', '{', '');
 
 const isAttribute = (lexeme) => /[a-z]/.test(lexeme[0]);
 

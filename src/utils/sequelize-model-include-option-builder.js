@@ -23,7 +23,7 @@ class SequelizeModelIncludeOptionBuilder {
     }
 
     build(resources) {
-        const lexemes = lexemeUtils.getLexemes(resources.trim());
+        const lexemes = lexemeUtils.getLexemes(resources);
 
         for (let lexemeIndex = 0; lexemeIndex < lexemes.length; lexemeIndex++) {
             const lexeme = lexemes[lexemeIndex];
